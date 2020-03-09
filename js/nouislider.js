@@ -2514,7 +2514,7 @@
 });
 
 $(document).ready(function(){
-    var topSlider = document.getElementById('test-slider');
+    var topSlider = document.getElementById('top');
     noUiSlider.create(topSlider, {
         start: [0],
         connect: true,
@@ -2529,10 +2529,11 @@ $(document).ready(function(){
         })
     });
 
-    var bottomSlider = document.getElementById('test-slider1');
+    var bottomSlider = document.getElementById('bottom');
     noUiSlider.create(bottomSlider, {
         start: [0],
         connect: true,
+        direction: 'rtl',
         step: 1,
         orientation: 'horizontal', // 'horizontal' or 'vertical'
         range: {
@@ -2543,6 +2544,61 @@ $(document).ready(function(){
             decimals: 0
         })
     });
-});
 
+    var leftSlider = document.getElementById('left');
+    noUiSlider.create(leftSlider, {
+        start: [0],
+        direction: 'rtl',
+        orientation: 'vertical',
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+
+    var leftMobileSlider = document.getElementById('left-mobile');
+    noUiSlider.create(leftMobileSlider, {
+        start: [0],
+        orientation: 'vertical',
+        direction: 'rtl',
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+
+    var rightSlider = document.getElementById('right');
+
+    noUiSlider.create(rightSlider, {
+        start: [0],
+        orientation: 'vertical',
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+
+    var rightMobileSlider = document.getElementById('right-mobile');
+    noUiSlider.create(rightMobileSlider, {
+        start: [0],
+        orientation: 'vertical',
+        range: {
+            'min': 0,
+            'max': 100
+        },
+        format: wNumb({
+            decimals: 0
+        })
+    });
+
+});
 
