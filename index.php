@@ -25,13 +25,12 @@
                             <div class="col s1 left" style="
                                  padding-right: 0px;
                                  padding-left: 0px;">
-                                <div class="col s1 hide-on-med-and-down" style="
-                                padding-right: 0px;padding-left: 190px;">left: 0%</div>
-                                <div class="col s1 hide-on-med-and-up" style="
+                                <div id="leftValue" class="col s1 hide-on-med-and-down" style="
+                                padding-right: 0px;padding-left: 190px;"></div>
+                                <div id="leftMobileValue" class="col s1 hide-on-med-and-up" style="
                                  padding-right: 50px;
-                                 padding-left: 0px;">left: 0%</div>
-
-                                <div style="padding-right: 0px; padding-left: 232px;">
+                                 padding-left: 0px;"></div>
+                                <div style="padding-right: 0px; padding-left: 240px;">
                                     <div id="left" class="hide-on-med-and-down" style="height: 200px"></div>
                                 </div>
                                 <div style="padding-left: 30px;">
@@ -39,11 +38,11 @@
                                 </div>
                             </div>
                             <img id="img"
-                                 class="top-radius right-radius br hoverable z-depth-2 responsive-img hide-on-med-and-down"
+                                 class="top-radius right-radius bottom-radius left-radius br hoverable z-depth-2 responsive-img hide-on-med-and-down"
                                  src="images/square.png"
                                  width="200px"
                                  alt="">
-                            <img class="top-radius right-radius br hoverable z-depth-2 responsive-img hide-on-med-and-up"
+                            <img class="top-radius right-radius bottom-radius left-radius br hoverable z-depth-2 responsive-img hide-on-med-and-up"
                                  src="images/square.png"
                                  width="100px"
                                  alt="">
@@ -60,14 +59,14 @@
                             </div>
                             <div class="row"></div>
                             <div class="col s4 push-s4" id="bottom"></div>
+                            <div class="row"></div>
+                            <div id="bottomValue"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </div>
 <script src="js/materialize.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>

@@ -2615,5 +2615,20 @@ $(document).ready(function () {
         document.getElementById("rightMobileValue").innerHTML = "right: " + values + "%";
         document.getElementById("right-radius").innerHTML = ".right-radius {border-top-right-radius:" + values + "%}";
     });
+
+    bottomSlider.noUiSlider.on('update', function (values, handle) {
+        document.getElementById("bottomValue").innerHTML = "bottom: " + values + "%";
+        document.getElementById("bottom-radius").innerHTML = ".bottom-radius {border-bottom-right-radius:" + values + "%}";
+    });
+
+    leftSlider.noUiSlider.on('update', function (values, handle) {
+        document.getElementById("leftValue").innerHTML = "left: " + values + "%";
+        document.getElementById("left-radius").innerHTML = ".left-radius {border-bottom-left-radius:" + values + "%}";
+    });
+
+    leftMobileSlider.noUiSlider.on('update', function (values, handle) {
+        document.getElementById("leftMobileValue").innerHTML = "left: " + values + "%";
+        document.getElementById("left-radius").innerHTML = ".left-radius {border-bottom-left-radius:" + values + "%}";
+    });
 });
 
