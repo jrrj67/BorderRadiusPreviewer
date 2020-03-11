@@ -2602,27 +2602,31 @@ $(document).ready(function () {
     });
 
     topSlider.noUiSlider.on('update', function (values, handle) {
-        document.getElementById("topValue").innerHTML = "top: " + values + "%";
+        var topValues = document.getElementById("topValue").innerHTML = "top: " + values + "%";
+        document.getElementById("topResult").innerHTML = topValues.substring(5);
         document.getElementById("top-radius").innerHTML = ".top-radius {border-top-left-radius:" + values + "%}";
     });
 
     rightSlider.noUiSlider.on('update', function (values, handle) {
-        document.getElementById("rightValue").innerHTML = "right: " + values + "%";
+        var rightValue = document.getElementById("rightValue").innerHTML = "right: " + values + "%";
+        document.getElementById("rightResult").innerHTML = rightValue.substring(7);
         document.getElementById("right-radius").innerHTML = ".right-radius {border-top-right-radius:" + values + "%}";
     });
 
     rightMobileSlider.noUiSlider.on('update', function (values, handle) {
         document.getElementById("rightMobileValue").innerHTML = "right: " + values + "%";
-        document.getElementById("right-radius").innerHTML = ".right-radius {border-top-right-radius:" + values + "%}";
+        document.getElementById("right-radius").innerHTML = ".right-radius {border-bottom-left-radius:" + values + "%}";
     });
 
     bottomSlider.noUiSlider.on('update', function (values, handle) {
-        document.getElementById("bottomValue").innerHTML = "bottom: " + values + "%";
+        var bottomValue = document.getElementById("bottomValue").innerHTML = "bottom: " + values + "%";
+        document.getElementById("bottomResult").innerHTML = bottomValue.substring(8);
         document.getElementById("bottom-radius").innerHTML = ".bottom-radius {border-bottom-right-radius:" + values + "%}";
     });
 
     leftSlider.noUiSlider.on('update', function (values, handle) {
-        document.getElementById("leftValue").innerHTML = "left: " + values + "%";
+       var leftValue = document.getElementById("leftValue").innerHTML = "left: " + values + "%";
+        document.getElementById("leftResult").innerHTML = leftValue.substring(6);
         document.getElementById("left-radius").innerHTML = ".left-radius {border-bottom-left-radius:" + values + "%}";
     });
 

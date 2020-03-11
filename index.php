@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/icons/material-icons.css">
     <title>Visualizador de border-radius</title>
 </head>
 <body>
@@ -62,6 +63,24 @@
                             <div class="row"></div>
                             <div id="bottomValue"></div>
                         </div>
+                        <div class="row"></div>
+                        <div class="col s12">
+                            <div class="card horizontal center">
+                                <div class="card-stacked">
+                                    <div class="card-content">
+                                        <p>CSS gerado:</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <div class="col s3 push-s1">border-radius:</div>
+                                        <div class="col s1 push-s1" id="topResult"></div>
+                                        <div class="col s1 push-s1" id="rightResult"></div>
+                                        <div class="col s1 push-s1" id="bottomResult"></div>
+                                        <div class="col s1 push-s1" id="leftResult"></div>
+                                        <a class="waves-effect waves-light btn">Copiar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,6 +91,7 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/wNumb.js"></script>
 <script src="js/nouislider.js"></script>
+<script src="js/clipboard.js"></script>
 <style id="top-radius"></style>
 <style id="right-radius"></style>
 <style id="bottom-radius"></style>
