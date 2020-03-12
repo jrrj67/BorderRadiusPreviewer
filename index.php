@@ -21,21 +21,21 @@
                         <div class="col s12 center">
                             <div id="topValue"></div>
                             <div class="row"></div>
-                            <div class="col s4 push-s4" id="top"></div>
+                            <div class="col s3 push-s3 hide-on-med-and-down" id="top" style="left: 303px;top: 10px;"></div>
                             <div class="row"></div>
                             <div class="col s1 left" style="
                                  padding-right: 0px;
                                  padding-left: 0px;">
                                 <div id="leftValue" class="col s1 hide-on-med-and-down" style="
                                 padding-right: 0px;padding-left: 190px;"></div>
-                                <div id="leftMobileValue" class="col s1 hide-on-med-and-up" style="
+                                <div id="leftMobileValue" class="col s1 pull-s6 hide-on-med-and-up" style="
                                  padding-right: 50px;
                                  padding-left: 0px;"></div>
                                 <div style="padding-right: 0px; padding-left: 240px;">
-                                    <div id="left" class="hide-on-med-and-down" style="height: 200px"></div>
+                                    <div id="left" class="hide-on-med-and-down" style="height: 185px;left: 35px;"></div>
                                 </div>
-                                <div style="padding-left: 30px;">
-                                    <div id="left-mobile" class="hide-on-med-and-up" style="height: 110px"></div>
+                                <div>
+                                    <div id="left-mobile" class="hide-on-med-and-up" style="height: 100px;left: 40px;"></div>
                                 </div>
                             </div>
                             <img id="img"
@@ -53,13 +53,15 @@
                                     padding-left: 50px" ;>
 
                                 </div>
-                                <div id="right" class="hide-on-med-and-down" style="height: 200px"></div>
-                                <div style="padding-left: 20px">
-                                    <div id="right-mobile" class="hide-on-med-and-up" style="height: 110px"></div>
+                                <div id="right" class="hide-on-med-and-down" style="height: 185px; right: 35px"></div>
+                                <div>
+                                    <div id="right-mobile" class="hide-on-med-and-up" style="height: 100px;left: 12px"></div>
                                 </div>
                             </div>
                             <div class="row"></div>
-                            <div class="col s4 push-s4" id="bottom"></div>
+                            <div>
+                                <div class="col s3 push-s3 hide-on-med-and-down" id="bottom" style="bottom: 16px;left: 303px;";></div>
+                            </div>
                             <div class="row"></div>
                             <div id="bottomValue"></div>
                         </div>
@@ -76,7 +78,10 @@
                                         <div class="col s1 push-s1" id="rightResult"></div>
                                         <div class="col s1 push-s1" id="bottomResult"></div>
                                         <div class="col s1 push-s1" id="leftResult"></div>
-                                        <a class="waves-effect waves-light btn">Copiar</a>
+                                        <div id="result"></div>
+                                        <a onclick="myFunc()" id="copyBtn" class="waves-effect waves-light btn cp">
+                                            Copiar
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -92,6 +97,16 @@
 <script src="js/wNumb.js"></script>
 <script src="js/nouislider.js"></script>
 <script src="js/clipboard.js"></script>
+<script>
+    function myFunc() {
+        var topResult = document.getElementById("topResult").innerHTML;
+        var rightResult = document.getElementById("rightResult").innerHTML;
+        var bottomResult = document.getElementById("bottomResult").innerHTML;
+        var leftResult = document.getElementById("leftResult").innerHTML;
+        document.getElementById("copyBtn").setAttribute("data-clipboard-text", "border-radius: "
+            + topResult + " " + rightResult + " " + bottomResult + " " + leftResult);
+    }
+</script>
 <style id="top-radius"></style>
 <style id="right-radius"></style>
 <style id="bottom-radius"></style>

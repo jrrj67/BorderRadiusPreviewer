@@ -2615,7 +2615,7 @@ $(document).ready(function () {
 
     rightMobileSlider.noUiSlider.on('update', function (values, handle) {
         document.getElementById("rightMobileValue").innerHTML = "right: " + values + "%";
-        document.getElementById("right-radius").innerHTML = ".right-radius {border-bottom-left-radius:" + values + "%}";
+        document.getElementById("right-radius").innerHTML = ".right-radius {border-top-right-radius:" + values + "%}";
     });
 
     bottomSlider.noUiSlider.on('update', function (values, handle) {

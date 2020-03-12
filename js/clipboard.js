@@ -972,10 +972,5 @@ function getAttributeValue(suffix, element) {
 /******/ ])["default"];
 });
 
-var copyToClip = new ClipboardJS('.naruto');
-
-copyToClip.on('success', function(e) {
-    var result = e.text;
-    console.log(result);
-});
+new ClipboardJS('.cp');
 
