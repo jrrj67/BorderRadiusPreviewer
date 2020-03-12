@@ -11,6 +11,15 @@
     <title>Visualizador de border-radius</title>
 </head>
 <body>
+<nav>
+    <div class="nav-wrapper teal lighten-2">
+        <a href="#" class="brand-logo center">Radius</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="https://github.com/jrrj67">My Github</a></li>
+            <li><a href="https://www.linkedin.com/in/jos%C3%A9-ricardo-rocha-587157135/">My Linkedin</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container">
     <div class="row"></div>
     <div class="row">
@@ -32,10 +41,10 @@
                                  padding-right: 50px;
                                  padding-left: 0px;"></div>
                                 <div style="padding-right: 0px; padding-left: 240px;">
-                                    <div id="left" class="hide-on-med-and-down" style="height: 185px;left: 35px;"></div>
+                                    <div id="left" class="hide-on-med-and-down" style="height: 185px;left: 35px;top: 7px;"></div>
                                 </div>
                                 <div>
-                                    <div id="left-mobile" class="hide-on-med-and-up" style="height: 100px;left: 40px;"></div>
+                                    <div id="left-mobile" class="hide-on-med-and-up" style="height: 100px;left: 41px;"></div>
                                 </div>
                             </div>
                             <img id="img"
@@ -53,7 +62,7 @@
                                     padding-left: 50px" ;>
 
                                 </div>
-                                <div id="right" class="hide-on-med-and-down" style="height: 185px; right: 35px"></div>
+                                <div id="right" class="hide-on-med-and-down" style="height: 185px; right: 35px;top: 7px;"></div>
                                 <div>
                                     <div id="right-mobile" class="hide-on-med-and-up" style="height: 100px;left: 12px"></div>
                                 </div>
@@ -66,13 +75,13 @@
                             <div id="bottomValue"></div>
                         </div>
                         <div class="row"></div>
-                        <div class="col s12">
+                        <div class="col s12 hide-on-med-and-down">
                             <div class="card horizontal center">
                                 <div class="card-stacked">
-                                    <div class="card-content">
-                                        <p>CSS gerado:</p>
+                                    <div class="card-content teal lighten-4">
+                                        <p><h5>CSS gerado:</h5></p>
                                     </div>
-                                    <div class="card-action">
+                                    <div class="card-action teal lighten-5">
                                         <div class="col s3 push-s1">border-radius:</div>
                                         <div class="col s1 push-s1" id="topResult"></div>
                                         <div class="col s1 push-s1" id="rightResult"></div>
@@ -92,6 +101,7 @@
         </div>
     </div>
 </div>
+
 <script src="js/materialize.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/wNumb.js"></script>
