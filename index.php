@@ -68,15 +68,25 @@
                                 <p><h5>CSS gerado:</h5></p>
                             </div>
                             <div class="card-action teal lighten-5">
-                                <div class="col s3 push-s1">border-radius:</div>
-                                <div class="col s1 push-s1" id="topResult"></div>
-                                <div class="col s1 push-s1" id="rightResult"></div>
-                                <div class="col s1 push-s1" id="bottomResult"></div>
-                                <div class="col s1 push-s1" id="leftResult"></div>
-                                <div id="result"></div>
-                                <a onclick="myFunc()" id="copyBtn" class="waves-effect waves-light btn cp">
-                                    Copiar
-                                </a>
+                                <div class="row center">
+                                    <div class="col s12">border-radius:
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="col s2 push-s2" id="topResult"></div>
+                                    <div class="col s2 push-s2" id="rightResult"></div>
+                                    <div class="col s2 push-s2" id="bottomResult"></div>
+                                    <div class="col s2 push-s2" id="leftResult"></div>
+                                    <div class="col s2 push-s2" id="result"></div>
+
+                                    <div class="row"></div>
+                                    <a onclick="myFunc()" id="copyBtn" class="push-s2 waves-effect waves-light btn cp">
+                                        Copiar
+                                    </a>
+                                </div>
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -96,7 +106,6 @@
         </div>
     </div>
 </footer>
-
 
 <script src="js/materialize.js"></script>
 <script src="js/jquery-3.4.1.min.js"></script>
