@@ -9085,3 +9085,15 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+
+.slider-height {
+  height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .slider-height-mobile {
+    height: 90px;!important;
+  }
+
+}

@@ -2560,22 +2560,21 @@ $(document).ready(function () {
         })
     });
 
-    var leftMobileSlider = document.getElementById('left-mobile');
-    noUiSlider.create(leftMobileSlider, {
-        start: [0],
-        orientation: 'vertical',
-        direction: 'rtl',
-        range: {
-            'min': 0,
-            'max': 100
-        },
-        format: wNumb({
-            decimals: 0
-        })
-    });
+    // var leftMobileSlider = document.getElementById('left-mobile');
+    // noUiSlider.create(leftMobileSlider, {
+    //     start: [0],
+    //     orientation: 'vertical',
+    //     direction: 'rtl',
+    //     range: {
+    //         'min': 0,
+    //         'max': 100
+    //     },
+    //     format: wNumb({
+    //         decimals: 0
+    //     })
+    // });
 
     var rightSlider = document.getElementById('right');
-
     noUiSlider.create(rightSlider, {
         start: [0],
         orientation: 'vertical',
@@ -2588,18 +2587,18 @@ $(document).ready(function () {
         })
     });
 
-    var rightMobileSlider = document.getElementById('right-mobile');
-    noUiSlider.create(rightMobileSlider, {
-        start: [0],
-        orientation: 'vertical',
-        range: {
-            'min': 0,
-            'max': 100
-        },
-        format: wNumb({
-            decimals: 0
-        })
-    });
+    // var rightMobileSlider = document.getElementById('right-mobile');
+    // noUiSlider.create(rightMobileSlider, {
+    //     start: [0],
+    //     orientation: 'vertical',
+    //     range: {
+    //         'min': 0,
+    //         'max': 100
+    //     },
+    //     format: wNumb({
+    //         decimals: 0
+    //     })
+    // });
 
     topSlider.noUiSlider.on('update', function (values, handle) {
         var topValues = document.getElementById("topValue").innerHTML = "top: " + values + "%";
@@ -2613,10 +2612,10 @@ $(document).ready(function () {
         document.getElementById("right-radius").innerHTML = ".right-radius {border-top-right-radius:" + values + "%}";
     });
 
-    rightMobileSlider.noUiSlider.on('update', function (values, handle) {
-        document.getElementById("rightMobileValue").innerHTML = "right: " + values + "%";
-        document.getElementById("right-radius").innerHTML = ".right-radius {border-top-right-radius:" + values + "%}";
-    });
+    // rightMobileSlider.noUiSlider.on('update', function (values, handle) {
+    //     document.getElementById("rightMobileValue").innerHTML = "right: " + values + "%";
+    //     document.getElementById("right-radius").innerHTML = ".right-radius {border-top-right-radius:" + values + "%}";
+    // });
 
     bottomSlider.noUiSlider.on('update', function (values, handle) {
         var bottomValue = document.getElementById("bottomValue").innerHTML = "bottom: " + values + "%";
@@ -2630,9 +2629,9 @@ $(document).ready(function () {
         document.getElementById("left-radius").innerHTML = ".left-radius {border-bottom-left-radius:" + values + "%}";
     });
 
-    leftMobileSlider.noUiSlider.on('update', function (values, handle) {
-        document.getElementById("leftMobileValue").innerHTML = "left: " + values + "%";
-        document.getElementById("left-radius").innerHTML = ".left-radius {border-bottom-left-radius:" + values + "%}";
-    });
+    // leftMobileSlider.noUiSlider.on('update', function (values, handle) {
+    //     document.getElementById("leftMobileValue").innerHTML = "left: " + values + "%";
+    //     document.getElementById("left-radius").innerHTML = ".left-radius {border-bottom-left-radius:" + values + "%}";
+    // });
 });
 
