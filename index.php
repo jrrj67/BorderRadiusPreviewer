@@ -15,12 +15,22 @@
     <nav>
         <div class="nav-wrapper teal lighten-2">
             <a href="#" class="brand-logo center">Radius</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger left"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="https://github.com/jrrj67">My Github</a></li>
                 <li><a href="https://www.linkedin.com/in/jos%C3%A9-ricardo-rocha-587157135/">My Linkedin</a></li>
             </ul>
         </div>
     </nav>
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <a href="https://github.com/jrrj67">My Github</a>
+                <br>
+                <a href="https://www.linkedin.com/in/jos%C3%A9-ricardo-rocha-587157135/">My Linkedin</a>
+            </div>
+        </li>
+    </ul>
 </header>
 
 <main>
@@ -83,8 +93,6 @@
                                         Copiar
                                     </a>
                                 </div>
-
-
 
 
                             </div>
